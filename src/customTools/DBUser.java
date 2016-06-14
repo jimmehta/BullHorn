@@ -9,7 +9,7 @@ import util.MD5Util;
 import model.Bhuser;
 
 public class DBUser {
-	public static Bhuser getUser(int userID)
+	public static Bhuser getUser(long userID)
 	{
 		EntityManager em = DBUtil.getEmFactory().createEntityManager();
 		Bhuser user = em.find(Bhuser.class, userID);

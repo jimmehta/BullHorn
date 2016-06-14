@@ -98,7 +98,7 @@ public class ProfileServlet extends HttpServlet {
 		
 		
 		}catch(Exception e){
-			System.out.println(e);
+			System.err.println(e.getStackTrace());
 		}finally{
 			//redirect to next page as indicated by the value of the nextURL variable
 			getServletContext().getRequestDispatcher(nextURL).forward(request,response);
